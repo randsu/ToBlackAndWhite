@@ -49,5 +49,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\blackandwhite-0.4.png" />
+    <None Include="Images\blackandwhite-0.5.png" />
+    <None Include="Images\blackandwhite-0.8.png" />
+    <Content Include="Images\color.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

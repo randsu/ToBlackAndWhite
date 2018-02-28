@@ -13,8 +13,8 @@ namespace ToBlackAndWhite
         /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            var colorImgPath = @"C:\Git\ToBlackAndWhite\ToBlackAndWhite\color.png";
-            var blackAndWhiteImgPath = @"C:\Git\ToBlackAndWhite\ToBlackAndWhite\blackandwhite.png";
+            var colorImgPath = @"C:\Git\ToBlackAndWhite\ToBlackAndWhite\Images\color.png";
+            var blackAndWhiteImgPath = @"C:\Git\ToBlackAndWhite\ToBlackAndWhite\Images\blackandwhite.png";
             var threshold = 0.8f; // TODO: get as argument
 
             if (args.Length > 1)
@@ -31,7 +31,7 @@ namespace ToBlackAndWhite
         
         internal static class Helper
         {
-            public static Bitmap Transform(Bitmap colorImage, float threshold = 0.4f)
+            public static Bitmap Transform(Bitmap colorImage, float threshold = 0.8f)
             {
                 var transformedImage = new Bitmap(colorImage.Width, colorImage.Height);
 
